@@ -333,6 +333,12 @@ ul {
   background-color: rgba(122, 176, 216, 0.08);
 }
 
+.navbar__submenu li.is-current > a,
+.navbar__submenu a[aria-current="page"] {
+  color: #ffffff;
+  background-color: rgba(122, 176, 216, 0.12);
+}
+
 .navbar__toggle {
   display: none;
   flex-direction: column;
@@ -1873,6 +1879,10 @@ ul {
 
 .footer__legal a:hover {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__legal a[aria-current="page"] {
+  color: #7AB0D8;
 }
 
 /* ============================================================
@@ -4228,6 +4238,51 @@ ul {
   color: #ffffff;
   text-transform: lowercase;
   margin-bottom: 56px;
+}
+
+.cert-intro {
+  max-width: 920px;
+  margin: 0 auto 40px;
+  padding: 28px 32px;
+  background: linear-gradient(180deg, rgba(11, 22, 40, 0.52), rgba(11, 22, 40, 0.26));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-intro__label {
+  font-family: var(--font-orbitron);
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7AB0D8;
+  margin-bottom: 12px;
+}
+
+.cert-intro__title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: lowercase;
+  margin-bottom: 14px;
+}
+
+.cert-intro__desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.68);
+  max-width: 760px;
+}
+
+.cert-intro__meta {
+  margin-top: 16px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .cert-row {
