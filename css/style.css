@@ -4291,7 +4291,7 @@ ul {
   gap: 56px;
   padding: 48px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  align-items: start;
+  align-items: center;
 }
 
 .cert-row:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
@@ -4368,7 +4368,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 8px;
+  justify-content: center;
 }
 
 .cert-row__desc {
